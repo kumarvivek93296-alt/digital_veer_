@@ -3,106 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Digital Veer - Beta</title>
+  <title>Tricolor Trends - Digital Veer App</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #ffcc80, #c8e6c9);
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
       margin: 0;
       padding: 0;
     }
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
       padding: 20px;
       text-align: center;
     }
-    .btn {
-      display: block;
-      width: 80%;
-      margin: 10px auto;
-      padding: 15px;
-      border: none;
-      border-radius: 10px;
-      font-size: 18px;
-      font-weight: bold;
-      cursor: pointer;
-      background: orange;
-      color: white;
-    }
-    .section {
-      display: none;
-      background: white;
-      padding: 20px;
-      margin-top: 20px;
-      border-radius: 10px;
-      box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
-      text-align: left;
-    }
-    .section h2 {
-      text-align: center;
+    h1 {
       color: darkgreen;
     }
-    ul {
-      list-style-type: "✅ ";
-      padding-left: 20px;
+    .service {
+      background: white;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 12px;
+      box-shadow: 0px 3px 8px rgba(0,0,0,0.15);
+      text-align: left;
     }
-    ul li {
-      margin: 8px 0;
+    .service h2 {
+      margin: 0;
+      color: #ff5722;
+    }
+    .price {
+      font-size: 18px;
+      font-weight: bold;
+      color: green;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background: #25D366;
+      color: white;
       font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #1ebe5c;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>🚩 Digital Veer - Beta Version</h1>
+    <h1>🚩 Tricolor Trends - Services 🚩</h1>
+    <p>India’s No.1 Digital Company – Affordable & Professional Services</p>
 
-    <!-- Buttons -->
-    <button class="btn" onclick="showSection('business')">⚡ Business Ideas</button>
-    <button class="btn" onclick="showSection('marketing')">📋 Marketing Help</button>
-    <button class="btn" onclick="showSection('editing')">🎬 Video Editing Tips</button>
-    <button class="btn" onclick="showSection('webapp')">🌐 Website/App Guide</button>
-
-    <!-- Sections -->
-    <div id="business" class="section">
-      <h2>⚡ Top 10 Business Ideas</h2>
-      <ul>
-        <li>Social Media Marketing Agency</li>
-        <li>E-commerce Store (Dropshipping/Own Products)</li>
-        <li>Online Education (Courses/Coaching)</li>
-        <li>Freelance Digital Services (Editing, Design, Websites)</li>
-        <li>Food Delivery Cloud Kitchen</li>
-        <li>Affiliate Marketing + Blogging</li>
-        <li>Mobile App Development Startup</li>
-        <li>YouTube + Content Creation Studio</li>
-        <li>Wedding Photography & Videography Business</li>
-        <li>Branding & Digital Consultancy</li>
-      </ul>
+    <!-- Video Editing -->
+    <div class="service">
+      <h2>🎬 Video Editing</h2>
+      <p>Professional video editing for social media, reels, ads & weddings.</p>
+      <p class="price">Starting at ₹1,999</p>
+      <a class="btn" href="https://wa.me/message/GMQRWPQXYWYIC1" target="_blank">Book Now</a>
     </div>
 
-    <div id="marketing" class="section">
-      <h2>📋 Marketing Help</h2>
-      <p>Social media, branding aur ads ke tips yahan show honge.</p>
+    <!-- Wedding Shoots -->
+    <div class="service">
+      <h2>💍 Wedding Shoot</h2>
+      <p>Full wedding photography & cinematography with premium quality.</p>
+      <p class="price">Packages from ₹29,999</p>
+      <a class="btn" href="https://wa.me/message/GMQRWPQXYWYIC1" target="_blank">Book Now</a>
     </div>
 
-    <div id="editing" class="section">
-      <h2>🎬 Video Editing Tips</h2>
-      <p>Editing tools aur tricks ke short guides yahan honge.</p>
+    <!-- Website/App -->
+    <div class="service">
+      <h2>🌐 Website & App Development</h2>
+      <p>Custom websites, mobile apps & business portals for growth.</p>
+      <p class="price">Starting at ₹9,999</p>
+      <a class="btn" href="https://wa.me/message/GMQRWPQXYWYIC1" target="_blank">Book Now</a>
     </div>
 
-    <div id="webapp" class="section">
-      <h2>🌐 Website/App Guide</h2>
-      <p>Website banane ke steps aur app tools ki info yahan hogi.</p>
+    <!-- Branding & Marketing -->
+    <div class="service">
+      <h2>🚀 Branding & Marketing</h2>
+      <p>Social media management, ad campaigns & brand strategy.</p>
+      <p class="price">Plans from ₹4,999</p>
+      <a class="btn" href="https://wa.me/message/GMQRWPQXYWYIC1" target="_blank">Book Now</a>
+    </div>
+
+    <!-- Graphic Design -->
+    <div class="service">
+      <h2>🎨 Graphic Design</h2>
+      <p>Logos, posters, flyers & complete business branding kits.</p>
+      <p class="price">Designs from ₹999</p>
+      <a class="btn" href="https://wa.me/message/GMQRWPQXYWYIC1" target="_blank">Book Now</a>
     </div>
   </div>
-
-  <script>
-    function showSection(id) {
-      // sab section hide karo
-      document.querySelectorAll('.section').forEach(sec => sec.style.display = "none");
-      // jis button pe click hua uska section dikhao
-      document.getElementById(id).style.display = "block";
-    }
-  </script>
 </body>
 </html>
